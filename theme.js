@@ -15,3 +15,13 @@
   btn.onclick=()=>set(!root.classList.contains('light'),true);
   addEventListener('keydown',e=>{ if(e.ctrlKey||e.metaKey||e.altKey) return; if(e.key==='t'||e.key==='T'){ if(window.obraAbierta&&obraAbierta()) return; set(!root.classList.contains('light'),true); } });
 })();
+
+/* Botón de pantalla completa (junto al de tema). La tecla F ya hace lo mismo. */
+(function(){
+  const EXP='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>';
+  const CON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h5V3M21 8h-5V3M3 16h5v5M21 16h-5v5"/></svg>';
+  const b=document.createElement('button'); b.id='fsbtn'; b.type='button'; document.body.appendChild(b);
+  function paint(){ const on=!!document.fullscreenElement; b.innerHTML=(on?CON:EXP)+'<span>'+(on?'Salir':'Pantalla completa')+'</span>'; b.setAttribute('aria-label',on?'Salir de pantalla completa':'Pantalla completa'); }
+  b.onclick=()=>{ document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(()=>{}); b.blur(); };
+  document.addEventListener('fullscreenchange',paint); paint();
+})();

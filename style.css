@@ -652,3 +652,7 @@ body.obra-open #themebtn{display:none}
 .cover-in .caso b{display:block;font-size:176px;line-height:.95;font-weight:800;letter-spacing:-.05em;color:var(--ink)}
 .cover-in h1.t2{font-size:72px}
 .cover-in .t2s{font-size:40px}
+#fsbtn{position:fixed;top:12px;right:170px;z-index:90;display:flex;align-items:center;gap:8px;background:rgba(var(--bg-rgb),.85);border:1px solid var(--line);color:var(--mute);border-radius:99px;padding:7px 15px 7px 11px;font-size:15px;letter-spacing:.04em;backdrop-filter:blur(4px)}
+#fsbtn:hover{border-color:var(--gold);color:var(--ink)}
+#fsbtn svg{width:18px;height:18px;flex:none}
+body.presenter #fsbtn,body.obra-open #fsbtn{display:none}
