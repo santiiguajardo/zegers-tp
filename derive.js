@@ -16,19 +16,21 @@
 })();
 
 // Ubicación aproximada de cada obra [lat, lon, región]. Fuente de la localidad: ficha de la web.
+// Precisión: 'dir' = dirección/lugar exacto verificado en fuentes; el resto = aproximada por sector (las casas privadas no publican coordenadas)
+const LOC_EXACTA = ['hotel-tierra-patagonia','hotel-magnolia','golf-manquehue','capilla-espiritu-santo'];
 const LOC = {
-  'casa-cala':[-40.30,-72.40,'Los Ríos'],  // Lago Ranco (la web); el TP decía Los Vilos / Zapallar
-  'casa-do':[-31.96,-71.53,'Coquimbo'],
-  'golf-manquehue':[-33.36,-70.51,'Metropolitana'], 'open-office':[-33.39,-70.58,'Metropolitana'],
-  'capilla-espiritu-santo':[-33.61,-70.58,'Metropolitana'], 'casa-petra':[-33.372,-70.559,'Metropolitana'], 'casa-t':[-33.83,-70.92,'Metropolitana'],
-  'casa-soplo':[-33.43,-70.68,'Metropolitana'], 'casa-esmeralda':[-33.33,-70.49,'Metropolitana'], 'hotel-magnolia':[-33.46,-70.64,'Metropolitana'],
-  'oficinas-felices':[-33.40,-70.57,'Metropolitana'], 'casa-k':[-33.41,-70.61,'Metropolitana'], 'tiny-house':[-33.48,-70.70,'Metropolitana'],
+  'casa-cala':[-40.318,-72.405,'Los Ríos'],  // Lago Ranco (la web); el TP decía Los Vilos / Zapallar
+  'casa-do':[-31.941,-71.511,'Coquimbo'],
+  'golf-manquehue':[-33.3376,-70.5525,'Metropolitana'], 'open-office':[-33.4019,-70.5984,'Metropolitana'],
+  'capilla-espiritu-santo':[-33.626,-70.5876,'Metropolitana'], 'casa-petra':[-33.3694,-70.5582,'Metropolitana'], 'casa-t':[-33.83,-70.92,'Metropolitana'],
+  'casa-soplo':[-33.3631,-70.5659,'Metropolitana'], 'casa-esmeralda':[-33.3627,-70.5652,'Metropolitana'], 'hotel-magnolia':[-33.4389,-70.6445,'Metropolitana'],
+  'oficinas-felices':[-33.40,-70.57,'Metropolitana'], 'casa-k':[-33.3429,-70.5272,'Metropolitana'], 'tiny-house':[-33.3669,-70.531,'Metropolitana'],
   'casa-haiku':[-32.88,-71.25,'Valparaíso'],
   'casa-fogon':[-39.27,-71.98,'La Araucanía'], 'casa-taller-cubo':[-39.30,-71.95,'La Araucanía'], 'casa-del-silencio':[-39.25,-71.90,'La Araucanía'],
-  'casa-cascara':[-39.28,-72.03,'La Araucanía'], 'casa-tea':[-39.32,-71.93,'La Araucanía'], 'casa-granero':[-39.22,-71.97,'La Araucanía'], 'casa-carpa':[-39.35,-71.75,'La Araucanía'],
+  'casa-cascara':[-39.28,-72.03,'La Araucanía'], 'casa-tea':[-39.32,-71.93,'La Araucanía'], 'casa-granero':[-39.22,-71.97,'La Araucanía'], 'casa-carpa':[-39.3555,-71.7545,'La Araucanía'],
   'casa-santa-maria':[-39.31,-71.88,'La Araucanía'],  // Kawelluco, Pucón (la web); el TP decía Chicureo
-  'casa-del-fuego':[-40.18,-72.00,'Los Ríos'], 'casa-llu':[-40.12,-72.05,'Los Ríos'], 'casa-ye':[-39.81,-73.25,'Los Ríos'],
-  'hotel-tierra-patagonia':[-51.00,-72.90,'Magallanes'],
+  'casa-del-fuego':[-40.245,-72.065,'Los Ríos'], 'casa-llu':[-40.3014,-72.0757,'Los Ríos'], 'casa-ye':[-39.7208,-73.0982,'Los Ríos'],
+  'hotel-tierra-patagonia':[-51.0356,-72.5839,'Magallanes'],
 };
 const REG_INSET = {'Metropolitana':'scl','Valparaíso':'scl','La Araucanía':'sur','Los Ríos':'sur'};
 

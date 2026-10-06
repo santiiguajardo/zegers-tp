@@ -138,7 +138,7 @@
     const w=works.find(x=>x.slug===sel);
     if(!w){ ficha.className='mp-ficha empty'; ficha.innerHTML='Tocá un punto del mapa o una región.<br><span style="font-size:18px">Rueda del mouse: acercar · arrastrar: mover · doble clic: acercar</span>'; }
     else { const F=(typeof FICHAS!=='undefined'&&FICHAS[w.slug])||null, ph=(F&&F.fotos)?'assets/fotos/'+w.slug+'/00.jpg':'assets/obras/'+w.slug+'.jpg';
-      ficha.className='mp-ficha'; ficha.innerHTML='<img src="'+ph+'" alt=""><div class="in"><h3>'+w.nombre+' <span class="pg" style="font-size:24px">'+w.anio+'</span></h3><div class="row"><div><span>Lugar</span>'+((F&&F.loc)||w.lugar)+'</div><div><span>Superficie</span>'+fmt(w.m2)+' m²</div><div><span>Cliente</span>'+w.cliente+'</div></div><button class="btn" id="mpOpen" style="margin-top:12px">Ver ficha completa y fotos</button></div>';
+      ficha.className='mp-ficha'; ficha.innerHTML='<img src="'+ph+'" alt=""><div class="in"><h3>'+w.nombre+' <span class="pg" style="font-size:24px">'+w.anio+'</span></h3><div class="row"><div><span>Lugar</span>'+((F&&F.loc)||w.lugar)+'</div><div><span>Superficie</span>'+fmt(w.m2)+' m²</div><div><span>Cliente</span>'+w.cliente+'</div><div><span>Ubicación en el mapa</span>'+(LOC_EXACTA.indexOf(w.slug)>-1?'exacta':'aproximada (sector)')+'</div></div><button class="btn" id="mpOpen" style="margin-top:12px">Ver ficha completa y fotos</button></div>';
       const o=$('#mpOpen'); if(o) o.onclick=()=>window.openObra&&openObra(w.slug); }
     if(window.__leaf) __leaf.refresh();
   }
