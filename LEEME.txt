@@ -1,0 +1,63 @@
+PRESENTACIÓN INTERACTIVA · Cazú Zegers · TyC 1.4 Cacopardo
+===========================================================
+
+CÓMO ABRIRLA
+  Doble clic en index.html (Chrome o Edge). Funciona sin internet.
+  Apretá F para pantalla completa.
+
+EN EL PROYECTOR (2 pantallas)
+  1. Conectá el proyector en modo "Extender".
+  2. Abrí index.html y arrastrá la ventana al proyector -> F (pantalla completa).
+  3. Apretá P: se abre la VISTA DEL PRESENTADOR (notas, reloj, lo que sigue).
+     Arrastrala a la pantalla de la notebook. Podés avanzar desde cualquiera de las dos.
+
+TECLAS
+  ->  Espacio  Enter   siguiente paso (revela cosas dentro de la lámina) y luego siguiente lámina
+  <-  Retroceso        paso anterior
+  PgDn / PgUp          saltar de lámina entero (útil con control remoto)
+  G  índice de láminas   F  pantalla completa   B  pantalla negra   P  presentador   ?  ayuda
+
+ORDEN (igual que el trabajo escrito) - 36 láminas
+  Portada (título: «Mínima intervención, máxima escala»), Índice, Punto de partida
+  1 Cronología: conteo y filtros, mapa de Chile, contexto año por año, premios y publicaciones sobre la línea de tiempo
+  2 Bio: la autora, biografía verificada
+  3 Genealogía: recorrido por la lámina, relatos (con fuente y escala)
+  4 Triángulo del productor: modelo, criterio de selección, Hotel Tierra Patagonia, Casa Cala, comparación, clientes, doble discurso, tres esbozos más, tensiones
+  5 Reflexión crítica: ideas de las teóricas, lecturas × caso, texto contra texto, reflexión, hallazgos, conclusión
+  Anexo: clases teóricas, videos de las teóricas
+  (Desde el Índice se salta a cada parte tocándola.)
+  Los recuadros "Para revisar" marcan datos del TP original que no coinciden con las fuentes; borrarlos antes de presentar.
+
+GUION DE 20 MINUTOS
+  guion-20-min.html (abrir en el navegador o en Word; imprimir o guardar como PDF) y guion-20-min.md
+
+LO INTERACTIVO (se usa con el mouse)
+  Conteo y filtros: elegí una dimensión y tocá una barra; se pueden combinar. Hay 6 filtros nuevos (borde punteado): tipo de cliente, región, entorno, tamaño del terreno, autoría y fotógrafo.
+  FICHA DE OBRA: tocá una obra (en el conteo, en la cronología, en el mapa o en clientes) y se abre con fotos y ficha técnica de la web de Cazú.
+     En la ficha: ← → cambian de foto · Shift+← → cambian de obra · F foto grande · Esc cierra
+  Mapa: tocar una región o un punto. El zoom se maneja con la rueda del mouse, arrastrando, o con los botones + − ⟲
+  Cronología: deslizar el año, botones ◀ ▶ (o teclas [ y ]) y "Recorrer" con velocidad regulable (3 a 25 segundos por año)
+  Biografía: puntos de la línea · Genealogía: recorrido con zoom
+  Triángulos: tocar PODER / VALIDACIÓN / DISCIPLINA (o usar ->)
+  Ideas de las teóricas y Lecturas × caso: tocar cada ítem (los links abren el video en YouTube)
+  Clientes: pasar el mouse por cada círculo (tamaño = m²)
+  Reflexión y clases: tocar cada ítem
+
+TEMA CLARO / OSCURO
+  Botón arriba a la derecha o tecla T. Se recuerda la última elección.
+
+TIPOGRAFÍA
+  Archivo (manual de marca de Defensa Vial): titulares 700 con palabras clave en 300 cursiva,
+  etiquetas en mayúsculas espaciadas, cifras en 800. Incluida en assets/fonts (funciona sin internet).
+
+PARA EDITAR
+  data.js    obras (m², cliente, filtros), clases, biografía, genealogía
+  derive.js  coordenadas del mapa (LOC), tipo de cliente, entorno, notas de contraste con la web y filtros nuevos
+  fichas.js  fichas técnicas y descripciones extraídas de cazuzegers.com/arquitectura (assets/fotos = fotos de cada obra)
+  ctx.js     contexto por año
+  index.html textos de cada lámina y notas del presentador (<aside class="notes">)
+  app.js     contenido de los triángulos (objeto TRI)
+  assets/    imágenes (obras/ = 27 fotos, img/ = láminas recortadas del PDF)
+
+TRANSCRIPCIONES
+  Carpeta transcripciones-teoricas (junto a los PDF del TP): 27 videos, subtítulos automáticos de YouTube; tienen errores de dictado.
