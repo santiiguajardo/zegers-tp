@@ -656,3 +656,20 @@ body.obra-open #themebtn{display:none}
 #fsbtn:hover{border-color:var(--gold);color:var(--ink)}
 #fsbtn svg{width:18px;height:18px;flex:none}
 body.presenter #fsbtn,body.obra-open #fsbtn{display:none}
+
+/* mapa base real (Leaflet) en el zoom */
+#mpLeaf{position:absolute;left:0;top:0;width:640px;height:760px;z-index:2;display:none;border-radius:4px;overflow:hidden;background:#222}
+.mp-inwrap.leaf-on #mpLeaf{display:block}
+.mp-inwrap.leaf-on>svg,.mp-inwrap.leaf-on .mp-zc,.mp-inwrap.leaf-on .mp-scale{visibility:hidden}
+.mp-base{position:absolute;right:12px;top:12px;z-index:5;display:flex;gap:0;background:rgba(var(--bg-rgb),.92);border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.mp-base button{padding:7px 15px;font-size:15px;letter-spacing:.04em;color:var(--mute)}
+.mp-base button.on{background:var(--gold);color:var(--on-gold);font-weight:600}
+.mp-base span{padding:7px 15px;font-size:14px;color:var(--mute)}
+.mp-att{position:absolute;right:6px;bottom:4px;z-index:5;font-size:11px;color:#fff;text-shadow:0 0 3px #000;pointer-events:none}
+.leaflet-container{font-family:inherit}
+.lf-lab{background:rgba(16,19,26,.88);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:14px;font-weight:600;padding:2px 8px;box-shadow:none}
+.lf-lab:before{display:none}
+.lf-lab.sel{background:#f0703f;border-color:#fff}
+.leaflet-control-zoom a{width:44px!important;height:44px!important;line-height:44px!important;font-size:24px!important}
+.leaflet-control-scale-line{font-size:14px;font-weight:600}
+.mapa .leaflet-container svg{background:none!important;border:0!important;border-radius:0!important;display:inline}

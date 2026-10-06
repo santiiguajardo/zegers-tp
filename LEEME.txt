@@ -32,7 +32,7 @@ GUION DE 20 MINUTOS
   guion-20-min.html (abrir en el navegador o en Word; imprimir o guardar como PDF) y guion-20-min.md
 
 LO INTERACTIVO (se usa con el mouse)
-  Conteo y filtros: elegí una dimensión y tocá una barra; se pueden combinar. Hay 6 filtros nuevos (borde punteado): tipo de cliente, región, entorno, tamaño del terreno, autoría y fotógrafo.
+  Conteo y filtros: elegí una dimensión y tocá una barra; se pueden combinar. Hay 5 filtros nuevos (borde punteado): tipo de cliente, región, entorno, tamaño del terreno, y autoría.
   FICHA DE OBRA: tocá una obra (en el conteo, en la cronología, en el mapa o en clientes) y se abre con fotos y ficha técnica de la web de Cazú.
      En la ficha: ← → cambian de foto · Shift+← → cambian de obra · F foto grande · Esc cierra
   Mapa: tocar una región o un punto. El zoom se maneja con la rueda del mouse, arrastrando, o con los botones + − ⟲

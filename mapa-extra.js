@@ -61,6 +61,7 @@
       const t=el('text',{x:q[0].toFixed(2),y:q[1].toFixed(2),class:'m-wlabel','data-s':wk.slug,'data-fs':16},g); t.textContent=short(wk); });
     $$('.mdot',ins).forEach(c=>c.addEventListener('click',()=>{ if(moved>4) return; select(c.dataset.s,true); }));
     z=1; vx=0; vy=0; apply();
+    if(window.__leaf) __leaf.setInset(inset);
   }
   function clamp(){ z=Math.max(1,Math.min(24,z)); vx=Math.max(0,Math.min(W-W/z,vx)); vy=Math.max(0,Math.min(H-H/z,vy)); }
   function apply(){
@@ -139,10 +140,12 @@
     else { const F=(typeof FICHAS!=='undefined'&&FICHAS[w.slug])||null, ph=(F&&F.fotos)?'assets/fotos/'+w.slug+'/00.jpg':'assets/obras/'+w.slug+'.jpg';
       ficha.className='mp-ficha'; ficha.innerHTML='<img src="'+ph+'" alt=""><div class="in"><h3>'+w.nombre+' <span class="pg" style="font-size:24px">'+w.anio+'</span></h3><div class="row"><div><span>Lugar</span>'+((F&&F.loc)||w.lugar)+'</div><div><span>Superficie</span>'+fmt(w.m2)+' m²</div><div><span>Cliente</span>'+w.cliente+'</div></div><button class="btn" id="mpOpen" style="margin-top:12px">Ver ficha completa y fotos</button></div>';
       const o=$('#mpOpen'); if(o) o.onclick=()=>window.openObra&&openObra(w.slug); }
+    if(window.__leaf) __leaf.refresh();
   }
   function select(slug,fly){ sel=slug; const L=LOC[slug]; const k=REG_INSET[L[2]]; const need=(k&&k!==inset); if(need){ inset=k; drawInset(); }
     render(); declutter();
+    if(window.__leaf) __leaf.focus(slug);
     if(fly){ const q=P(L[1],L[0]); flyTo(q[0],q[1],Math.max(z,5)); } }
-  window.__mapa={render};
+  window.__mapa={render,select:(s,f)=>select(s,f),inset:()=>inset,sel:()=>sel,reg:()=>reg};
   drawInset(); render();
 })();

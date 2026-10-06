@@ -47,7 +47,7 @@ Vamos en cinco partes, en el orden que pide la cátedra: la cronología, la biog
 
 Lo primero fue **contar**. Relevamos 27 obras, entre 1991 y 2023. La mediana es de 344 metros cuadrados; la más grande es el edificio Golf de Manquehue, con 8.144. Quince son de madera, nueve de hormigón. Casi todo es encargo privado, y veinte son viviendas.
 
-Después las cruzamos con filtros. A los de la guía —materialidad, comitente, programa— les sumamos otros que nos parecieron útiles: tipo de cliente, región, entorno, tamaño del terreno, autoría y fotógrafo. Les muestro el del terreno, porque nos dio un dato clave. De las 22 obras con dato de terreno, **13 tienen una hectárea o más**. La mediana es una hectárea, unas cincuenta veces lo construido, y cuatro superan las diez hectáreas.
+Después las cruzamos con filtros. A los de la guía —materialidad, comitente, programa— les sumamos otros que nos parecieron útiles: tipo de cliente, región, entorno, tamaño del terreno, y autoría. Les muestro el del terreno, porque nos dio un dato clave. De las 22 obras con dato de terreno, **13 tienen una hectárea o más**. La mediana es una hectárea, unas cincuenta veces lo construido, y cuatro superan las diez hectáreas.
 
 **[Tocar una obra: se abre la ficha]**
 

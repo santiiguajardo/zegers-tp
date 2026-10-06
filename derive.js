@@ -75,5 +75,4 @@ DIMS.push(
   { id:'entorno',label:'Entorno',                nuevo:true, get:w=>w.entorno },
   { id:'terreno',label:'Tamaño del terreno',     nuevo:true, get:w=> w.terreno==null ? 'Sin dato' : (w.terreno<1000 ? '< 1.000 m²' : (w.terreno<10000 ? '1.000 – 10.000 m²' : (w.terreno<=100000 ? '1 – 10 ha' : '> 10 ha'))) },
   { id:'autoria',label:'Autoría',                nuevo:true, get:w=>w.autoria },
-  { id:'foto',   label:'Fotógrafo (circulación)',nuevo:true, get:w=>w.fotografo },
 );
