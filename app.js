@@ -250,8 +250,7 @@ const TRI={
     <ul><li><b>Katari S.A.</b> es la dueña de <b>Tierra Hotels</b> (Tierra Atacama, Tierra Patagonia y Tierra Chiloé). La fundaron las familias <b>Purcell</b> (Ski Portillo) y <b>Matetic</b> (viña Matetic).</li>
     <li>En <b>agosto de 2022</b> vendieron el <b>83,5 %</b> a <b>Baillie Lodges</b>, de <b>KSL Capital Partners</b> (fondo de inversión).</li>
     <li>Tarifa 2025–26: <b>US$ 2.450 a 4.540</b> por habitación y noche, todo incluido, mínimo 3 noches.</li></ul>
-    <div class="imgs"><img src="assets/fotos/hotel-tierra-patagonia/00.jpg" style="height:230px" alt=""><img src="assets/fotos/hotel-tierra-patagonia/04.jpg" style="height:230px" alt=""></div>
-    <div class="call"><b>Para revisar:</b> el TP presentaba a Katari como holding con promotores de minería, litio y carbón. No encontramos fuente que lo respalde; puede ser otra empresa con el mismo nombre.</div>`,
+    <div class="imgs"><img src="assets/fotos/hotel-tierra-patagonia/00.jpg" style="height:230px" alt=""><img src="assets/fotos/hotel-tierra-patagonia/04.jpg" style="height:230px" alt=""></div>`,
   valid:`<div class="mono">Vértice 2 · Validación</div><h3>¿Quién la legitima?</h3>
     <ul><li><b>Revistas</b> de viajes, hotelería y diseño.</li><li><b>Publicaciones de arquitectura</b>: ArchDaily, ARQA, Archilovers, Architizer.</li><li><b>Premios</b>: Traveler 100 Best Hotels, Tripadvisor Travellers’ Choice, National Geographic World Legacy Awards, Condé Nast Readers’ Choice, Gold List.</li></ul>
     <div class="imgs"><img src="assets/img/tp-revistas.jpg" style="height:215px" alt=""><img src="assets/img/tp-publicaciones.jpg" style="height:104px" alt=""></div>
@@ -272,8 +271,7 @@ const TRI={
     <li>El TP lo presentaba como gerente general de la Bolsa de Comercio de Santiago: <b>no pudimos confirmarlo</b>.</li>
     <li>Casa de <b>447 m²</b> en <b>20 hectáreas</b> de propiedad privada, en Lago Ranco (Los Ríos).</li>
     <li><i>Hipótesis:</i> es la carta de presentación de la autora ante el mercado: el premio de 1993 la hace visible.</li></ul>
-    <div class="imgs"><img src="assets/fotos/casa-cala/00.jpg" style="height:220px" alt=""><img src="assets/fotos/casa-cala/05.jpg" style="height:220px" alt=""></div>
-    <div class="call"><b>Para revisar:</b> el TP ubicaba Casa Cala en El Pangue (Zapallar) y hablaba de un condominio privado de élite. La web del estudio la ubica en Lago Ranco.</div>`,
+    <div class="imgs"><img src="assets/fotos/casa-cala/00.jpg" style="height:220px" alt=""><img src="assets/fotos/casa-cala/05.jpg" style="height:220px" alt=""></div>`,
   valid:`<div class="mono">Vértice 2 · Validación</div><h3>¿Quién la legitima?</h3>
     <ul><li><b>Gran Premio de Arquitectura Latinoamericana, 1993</b>: primera versión, ganada con la casa tesis.</li><li>Bienales de arquitectura, <i>The Architectural Review</i> (Emerging Architecture) y AREA.</li><li>ArchDaily y ARQA.</li></ul>
     <div class="imgs"><img src="assets/img/cc-premios.jpg" style="height:190px" alt=""><img src="assets/img/cc-revistas.jpg" style="height:190px" alt=""></div>

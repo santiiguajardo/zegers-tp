@@ -100,7 +100,7 @@
     r:'Lo ondulante frente a lo estático; «material del lugar», casi siempre madera.',
     d:[
      '<b>'+curva+' de '+n+'</b> obras están clasificadas como forma curva; <b>'+madera+' de '+n+'</b> son de madera.',
-     'La curva y la madera aparecen desde Casa Cala (1991) y se repiten en el hotel (2012).'],
+     'La curva y la madera aparecen desde Casa Cala (1991) y se repiten en el hotel (2011).'],
     l:'Cacopardo (teórica 8): la madera laminada curva «sin coherencia» entre material, tecnología y forma se naturalizó y hasta se premia. Mies exigía coherencia; Venturi la rompe y le da autonomía a la forma.',
     m:'Su método (Gesto–Figura–Forma) busca que la forma nazca de la observación del lugar, y usa carpintería local: es un argumento de coherencia propio.',
     q:'¿Es una forma que nace del lugar o una firma que se repite en lugares distintos?',

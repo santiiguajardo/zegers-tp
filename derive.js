@@ -46,17 +46,7 @@ const ENTORNO = {
 };
 
 // Notas de contraste entre el TP y la ficha oficial (se muestran en la ficha de cada obra)
-const NOTAS_FICHA = {
-  'casa-cala':'La web ubica la obra en Lago Ranco (Los Ríos). En nuestra cronología figuraba Los Vilos y en la biografía El Pangue (Zapallar): revisar.',
-  'casa-santa-maria':'Superficie: 200 m² según la web (en el TP figuraba 2.002). Está en Kawelluco, Pucón; el TP decía Chicureo.',
-  'casa-del-fuego':'Superficie: 860 m² según la web (en el TP figuraba 528).',
-  'casa-t':'Superficie: 489 m² según la web (en el TP figuraba 245).',
-  'casa-llu':'La web publica 4.900 m² y 70 ha: los mismos datos que el Hotel Tierra Patagonia. Puede ser un error de la web.',
-  'capilla-espiritu-santo':'La web publica 903 m², la misma cifra que Casa Haiku.',
-  'hotel-tierra-patagonia':'Año: la web indica 2011; en el TP figura 2012.',
-  'hotel-magnolia':'Año: la web indica 2016; en el TP figura 2015.',
-  'casa-ye':'La web indica 2008 como año del proyecto y 2016–2018 como construcción.',
-};
+const NOTAS_FICHA = {};
 
 // --- parseo de la ficha oficial ---
 function fichaGet(slug, re){ const f=(typeof FICHAS!=='undefined'&&FICHAS[slug])?FICHAS[slug].ficha:[]; const x=f.find(p=>re.test(p[0])); return x?x[1]:null; }
