@@ -16,12 +16,27 @@
   addEventListener('keydown',e=>{ if(e.ctrlKey||e.metaKey||e.altKey) return; if(e.key==='t'||e.key==='T'){ if(window.obraAbierta&&obraAbierta()) return; set(!root.classList.contains('light'),true); } });
 })();
 
-/* Botón de pantalla completa (junto al de tema). La tecla F ya hace lo mismo. */
+/* Botón de pantalla completa (junto al de tema). La tecla F hace lo mismo.
+   Usa la API estándar o la de WebKit; en iPhone (que no la tiene) cae a un modo "limpio" que oculta los botones. */
 (function(){
   const EXP='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>';
   const CON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h5V3M21 8h-5V3M3 16h5v5M21 16h-5v5"/></svg>';
+  const de=document.documentElement;
+  const req=de.requestFullscreen||de.webkitRequestFullscreen||de.msRequestFullscreen;
+  const fsEl=()=>document.fullscreenElement||document.webkitFullscreenElement||null;
   const b=document.createElement('button'); b.id='fsbtn'; b.type='button'; document.body.appendChild(b);
-  function paint(){ const on=!!document.fullscreenElement; b.innerHTML=(on?CON:EXP)+'<span>'+(on?'Salir':'Pantalla completa')+'</span>'; b.setAttribute('aria-label',on?'Salir de pantalla completa':'Pantalla completa'); }
-  b.onclick=()=>{ document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(()=>{}); b.blur(); };
-  document.addEventListener('fullscreenchange',paint); paint();
+  const clean=()=>document.body.classList.contains('clean');
+  function paint(){ const on=!!fsEl()||clean(); b.innerHTML=(on?CON:EXP)+'<span>'+(on?'Salir':'Pantalla completa')+'</span>'; b.setAttribute('aria-label',on?'Salir de pantalla completa':'Pantalla completa'); }
+  function toggle(){
+    if(fsEl()){ (document.exitFullscreen||document.webkitExitFullscreen).call(document); return; }
+    if(clean()){ document.body.classList.remove('clean'); paint(); return; }
+    if(req){
+      let p; try{ p=req.call(de,{navigationUI:'hide'}); }catch(e){ p=Promise.reject(e); }
+      Promise.resolve(p).then(()=>{ try{ screen.orientation&&screen.orientation.lock&&screen.orientation.lock('landscape').catch(()=>{}); }catch(e){} })
+        .catch(()=>{ document.body.classList.add('clean'); paint(); });
+    } else { document.body.classList.add('clean'); paint(); }   // iPhone: modo limpio
+  }
+  window.togglePantallaCompleta=toggle;
+  b.onclick=()=>{ toggle(); b.blur(); };
+  ['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,paint)); paint();
 })();

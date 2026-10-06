@@ -673,3 +673,19 @@ body.presenter #fsbtn,body.obra-open #fsbtn{display:none}
 .leaflet-control-zoom a{width:44px!important;height:44px!important;line-height:44px!important;font-size:24px!important}
 .leaflet-control-scale-line{font-size:14px;font-weight:600}
 .mapa .leaflet-container svg{background:none!important;border:0!important;border-radius:0!important;display:inline}
+
+/* ---- celular / táctil ---- */
+html,body{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+#navPrev,#navNext{position:fixed;bottom:14px;z-index:95;width:58px;height:58px;border-radius:50%;background:rgba(var(--bg-rgb),.86);border:1px solid var(--line);color:var(--ink);font-size:38px;line-height:1;display:none;align-items:center;justify-content:center;padding:0 0 4px;backdrop-filter:blur(4px)}
+#navPrev{left:14px} #navNext{right:14px}
+#navNext{background:var(--gold);color:var(--on-gold);border-color:var(--gold)}
+@media (pointer:coarse),(max-width:900px){ #navPrev,#navNext{display:flex} }
+body.presenter #navPrev,body.presenter #navNext,body.obra-open #navPrev,body.obra-open #navNext{display:none!important}
+@media (max-width:900px){ #fsbtn span,#themebtn span{display:none} #fsbtn{right:60px;padding:8px 10px} #themebtn{padding:8px 10px} #fsbtn svg,#themebtn svg{width:22px;height:22px} }
+#rotHint{position:fixed;inset:0;z-index:200;display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:rgba(var(--bg-rgb),.96);color:var(--ink);padding:30px;font-size:22px}
+#rotHint b{font-size:28px} #rotHint span{color:var(--mute);font-size:16px} #rotHint button{margin-top:14px;padding:10px 22px;border-radius:99px;border:1px solid var(--gold);color:var(--gold);font-size:16px}
+/* modo "pantalla completa" para navegadores sin API (iPhone): oculta botones y barras */
+body.clean #themebtn,body.clean #count{display:none}
+body{position:fixed;inset:0;overflow:hidden}
+html,body{overscroll-behavior:none}
+html,body,#stage{touch-action:pan-y pinch-zoom}

@@ -76,7 +76,7 @@ addEventListener('keydown',e=>{
   else if(k==='PageUp'||k==='ArrowUp'){ e.preventDefault(); prevSlide(); }
   else if(k==='Home') show(0,0);
   else if(k==='End') show(slides.length-1,0);
-  else if(k==='f'||k==='F'){ document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(()=>{}); }
+  else if(k==='f'||k==='F'){ if(window.togglePantallaCompleta) togglePantallaCompleta(); }
   else if(k==='b'||k==='B'){ const b=$('#black'); b.style.display=b.style.display==='block'?'none':'block'; }
   else if(k==='g'||k==='G'){ toggleOverview(); }
   else if(k==='p'||k==='P'){ openPresenter(); }

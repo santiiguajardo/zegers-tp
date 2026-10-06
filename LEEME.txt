@@ -61,3 +61,8 @@ PARA EDITAR
 
 TRANSCRIPCIONES
   Carpeta transcripciones-teoricas (junto a los PDF del TP): 27 videos, subtítulos automáticos de YouTube; tienen errores de dictado.
+
+CELULAR / TABLETA
+  Botones ◀ ▶ abajo (a los costados) y deslizar el dedo a izquierda/derecha para cambiar de lámina (no desliza sobre mapas ni fichas).
+  Conviene girar el celular en horizontal (avisa solo). Botón de pantalla completa arriba a la derecha; en iPhone, que no permite
+  pantalla completa real, pasa a modo limpio (oculta botones).
